@@ -12,11 +12,16 @@ La jerarquía esta dada por un conjunto de vértices llamado quasi-núcleo, que 
 - Fácil de usar y personalizar para diferentes propósitos.
 
 # Uso
-Compilar el archivo, luego aparecera "User: " que es donde se pone la oración que se desea extender.
+Compilar el archivo, luego aparecera "User: " que es donde se pone la oración que se desea extender. Es posible que tarde en compilar el archivo, ya que depende del tamaño de la base de datos.
 
 ```bash
 python Continuator.py
-    User: ___
+```
+
+# Ejemplo
+```python
+User: Un
+Continuator: Un gato ve un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en
 ```
 
 ## Cómo Funciona
