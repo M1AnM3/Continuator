@@ -1,8 +1,8 @@
 import networkx as nx
 import random
 import math
-#import matplotlib.pyplot as plt
-#import mplcursors
+import matplotlib.pyplot as plt
+import mplcursors
 from colorama import Fore, Back, Style, init
 
 init() #Para Colorama
@@ -49,11 +49,6 @@ def SepararTexto(texto):
     for palabra in texto:
         if palabra == " ":
             x += palabra
-        #elif palabra == ".":
-        #    if x:
-        #        l.append(x)
-        #        x = ""
-        #    l.append(".")
         else:
             if x and x[-1] == " ":
                 l.append(x)
@@ -188,25 +183,25 @@ def SigNodo(Nodo1, QNucleo, DiGra):
 # Para vizualizar la digráfica
 ############################################################################
 
-#pos = calculate_positions(G, QN, UnoAbs, DosAbs)
+pos = calculate_positions(G, QN, UnoAbs, DosAbs)
 
-#node_colors = ["skyblue" if node in QN else "red" if node in UnoAbs else "green" for node in G.nodes]
-#bbox_params = {
-#    'boxstyle': "round,pad=0.3",  
-#    'ec': "black",               
-#    'fc': "lightyellow",         
-#    'alpha': 0.7                 
-#}
+node_colors = ["skyblue" if node in QN else "red" if node in UnoAbs else "green" for node in G.nodes]
+bbox_params = {
+    'boxstyle': "round,pad=0.3",  
+    'ec': "black",               
+    'fc': "lightyellow",         
+    'alpha': 0.7                 
+}
 
-#nx.draw_networkx_nodes(G, pos, node_color=node_colors, node_size=40) # nx.draw_networkx_labels(G, pos, font_size=10, font_color='black', font_weight='bold', bbox=bbox_params) # 
-#nx.draw_networkx_edges(G, pos, arrowsize=10, alpha=0.3)
-#plt.axis("off")
+nx.draw_networkx_nodes(G, pos, node_color=node_colors, node_size=40) # nx.draw_networkx_labels(G, pos, font_size=10, font_color='black', font_weight='bold', bbox=bbox_params) # 
+nx.draw_networkx_edges(G, pos, arrowsize=10, alpha=0.3)
+plt.axis("off")
 
-#crs = mplcursors.cursor(hover=True)
+crs = mplcursors.cursor(hover=True)
 
-#crs.connect("add", lambda sel: sel.annotation.set_text(f'{list(G.nodes)[sel.target.index]}'))
+crs.connect("add", lambda sel: sel.annotation.set_text(f'{list(G.nodes)[sel.target.index]}'))
 
-#plt.show()
+plt.show()
 
 ############################################################################
 # Cerrar la ventana de la gráfica para ejecutar el resto del código
