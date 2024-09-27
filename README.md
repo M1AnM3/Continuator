@@ -8,7 +8,6 @@ La jerarquía esta dada por un conjunto de vértices llamado quasi-núcleo, que 
 ## Características
 
 - Generación de continuaciones basadas en la última palabra de la oración.
-- Soporte para múltiples opciones de continuación. 
 - Fácil de usar y personalizar para diferentes propósitos.
 
 # Uso
