@@ -77,7 +77,7 @@ A = [
         "Un gato ve un gato.",
         "Vi un gato. Es naranja.",
         "Es raro ver el color naranja. Excepto en un gato."
-    ]
+    ] #Esto es básicamente la base de datos.
 
 G = DiGraCo(A)
 
