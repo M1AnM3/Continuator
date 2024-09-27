@@ -19,7 +19,7 @@ python Continuator.py
 ```
 
 # Ejemplo
-```python
+```bash
 User: Un
 Continuator: Un gato ve un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en un gato. Es naranja. Excepto en
 ```
