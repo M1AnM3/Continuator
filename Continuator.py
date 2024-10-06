@@ -43,24 +43,24 @@ def Color(texto):
 ############################################################################
 
 def SepararTexto(texto):
-    l = []
+    palabra = []
     x = ''
 
-    for palabra in texto:
-        if palabra == " ":
-            x += palabra
+    for letra in texto:
+        if letra == " ":
+            x += letra
         else:
             if x and x[-1] == " ":
-                l.append(x)
+                palabra.append(x)
                 x = ""
-            x += palabra
+            x += letra
     
     if x:
-       l.append(x)
+       palabra.append(x)
 
-    l[-1] += ' '
+    palabra[-1] += ' '
 
-    return l
+    return palabra
 
 def DiGraCo(A):
   Aa = [SepararTexto(A[i]) for i in range(len(A))]
